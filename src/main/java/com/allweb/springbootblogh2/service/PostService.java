@@ -2,8 +2,8 @@ package com.allweb.springbootblogh2.service;
 
 import com.allweb.springbootblogh2.exception.BadRequestException;
 import com.allweb.springbootblogh2.exception.DataNotFoundException;
-import com.allweb.springbootblogh2.model.Post;
-import com.allweb.springbootblogh2.model.Tag;
+import com.allweb.springbootblogh2.model.entity.Post;
+import com.allweb.springbootblogh2.model.entity.Tag;
 import com.allweb.springbootblogh2.repository.PostRepository;
 import com.allweb.springbootblogh2.repository.TagRepository;
 import org.springframework.beans.factory.annotation.Autowired;
