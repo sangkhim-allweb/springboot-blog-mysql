@@ -69,7 +69,7 @@ public class PostService {
   }
 
   public Tag addTag(Long postId, Tag tagRequest) {
-    Tag existingPost =
+    Tag existing =
         postRepository
             .findById(postId)
             .map(
@@ -96,7 +96,7 @@ public class PostService {
                     new DataNotFoundException(
                         MessageFormat.format("Post id {0} not found", String.valueOf(postId))));
 
-    return existingPost;
+    return existing;
   }
 
   public void deleteTagFromPost(Long postId, Long tagId) {

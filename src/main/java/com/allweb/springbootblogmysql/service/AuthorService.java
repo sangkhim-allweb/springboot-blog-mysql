@@ -22,13 +22,14 @@ public class AuthorService {
   }
 
   public Author getById(Long id) {
-    Optional<Author> author = authorRepository.findById(id);
-    if (author.isPresent()) {
-      return author.get();
-    } else {
-      throw new DataNotFoundException(
-          MessageFormat.format("Author id {0} not found", String.valueOf(id)));
-    }
+    Author author =
+        authorRepository
+            .findById(id)
+            .orElseThrow(
+                () ->
+                    new DataNotFoundException(
+                        MessageFormat.format("Author id {0} not found", String.valueOf(id))));
+    return author;
   }
 
   public Author createOrUpdate(Author authorRequest) {
