@@ -1,4 +1,4 @@
-package com.allweb.springbootblogmysql.exception;
+package com.allweb.springbootblogmysql.exception.base;
 
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.http.HttpHeaders;

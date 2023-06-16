@@ -1,10 +1,9 @@
-package com.allweb.springbootblogmysql.base;
+package com.allweb.springbootblogmysql.exception.base;
 
-import com.allweb.springbootblogmysql.exception.base.dto.ErrorResponse;
+import com.allweb.springbootblogmysql.exception.dto.ErrorResponse;
 import com.allweb.springbootblogmysql.exception.BadRequestException;
 import com.allweb.springbootblogmysql.exception.DataNotFoundException;
 import com.allweb.springbootblogmysql.exception.DuplicateException;
-import com.allweb.springbootblogmysql.exception.base.ServiceException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.HttpRequestMethodNotSupportedException;

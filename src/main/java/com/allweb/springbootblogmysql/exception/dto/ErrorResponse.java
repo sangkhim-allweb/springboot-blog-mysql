@@ -1,4 +1,4 @@
-package com.allweb.springbootblogmysql.exception.base.dto;
+package com.allweb.springbootblogmysql.exception.dto;
 
 import lombok.*;
 
